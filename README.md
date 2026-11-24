@@ -27,9 +27,10 @@ typst compile main.typ   # one-off build
 ```
 
 `main.typ` demonstrates every slide type; delete what you don't need. Put
-references in `references.bib` (citations appear as footnotes using the
-included `nature-footnote.csl`). `photo.jpg` is a placeholder; replace it
-with your own image.
+references in `references.bib`: citing with `@Key` adds a short reference at
+the foot of that slide, and the References slide lists everything in full
+(both citation styles come with the theme). `photo.jpg` is a placeholder;
+replace it with your own image.
 
 For theme options and the full list of slide functions, see the uc-slides
 README once you have access.

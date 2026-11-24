@@ -12,10 +12,7 @@
     institution: [University of Canterbury],
     date: datetime.today(),
   ),
-  config-common(show-bibliography-as-footnote: true),
 )
-
-#set bibliography(title: none, style: "nature-footnote.csl")
 
 #title-slide()
 
@@ -72,7 +69,7 @@ Text that appears on the second subslide.
   ]
 ][
   #option[Option 3][
-    Citations appear as numbered footnotes at the bottom of the slide.@Linscott2023
+    Citations appear as short footnotes at the bottom of the slide.@Linscott2023
   ]
 ]
 
@@ -125,7 +122,8 @@ Text that appears on the second subslide.
 
 == References
 
-#bibliography("references.bib")
+// footnotes use a short style; this list has all authors and titles
+#uc-bibliography(read("references.bib"))
 
 #end-slide[
   edward.linscott\@canterbury.ac.nz
