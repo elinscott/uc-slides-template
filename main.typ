@@ -21,7 +21,6 @@
 
 == Outline
 
-#show outline.entry: it => block(spacing: 0.8em, link(it.element.location(), it.body()))
 #outline(title: none, depth: 1)
 
 = Introduction
@@ -34,6 +33,7 @@ chevron bar along the bottom is drawn as a vector, so it stays crisp.
 - Bulleted lists
 - Nested items
   - as usual
+- `*bold*` is *red emphasis*, as in Touying; use `#text(weight: "bold")[..]` for plain bold
 - `#pause` works as usual
 
 #pause
@@ -89,10 +89,10 @@ Text that appears on the second subslide.
   Pass `side: left` and `variant: "red"` for the mirrored, red version.
 ]
 
-#image-slide(image("campus.jpg"), stat: [75%], stat-label: [of students agree])[
+#stat-slide([75%], [of students agree])[
   A key statistic
 ][
-  Pass `stat:` and `stat-label:` to overlay a large number on the photo.
+  A very large figure on a red panel, with a label underneath.
 ]
 
 #focus-slide[
