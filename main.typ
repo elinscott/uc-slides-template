@@ -76,14 +76,14 @@ Text that appears on the second subslide.
   ]
 ]
 
-#image-slide(image("campus.jpg"))[
+#image-slide(image("photo.jpg"))[
   Photo on the right
 ][
   The signature layout of the template: a half-bleed photo with a heading
   and a short paragraph beside it.
 ]
 
-#image-slide(image("campus.jpg"), side: left, variant: "red")[
+#image-slide(image("photo.jpg"), side: left, variant: "red")[
   Photo on the left
 ][
   Pass `side: left` and `variant: "red"` for the mirrored, red version.
@@ -107,7 +107,7 @@ Text that appears on the second subslide.
   Pass `variant: "red"` for the red version of the content slide.
 ]
 
-#full-image-slide(image("campus.jpg"))
+#full-image-slide(image("photo.jpg"))
 
 #matrix-slide(columns: 3, primary: uc-colors.light-grey.lighten(50%), secondary: white)[
   A matrix slide
